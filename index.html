@@ -3,20 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>poem generator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <header><h1>AI poem generator</h1></header>
+      <header><h1>AI Persian Poem Generator</h1></header>
       <main>
-        <form>
+        <form id="poem-generator-form" >
           <input
             type="text"
             placeholder="Enter the topic.."
             class="instructions"
+            id="user-instructions"
+            autofocus
+            required
+            autocomplete="off"
           />
-          <input type="submit" class="submit-button" />
+          <input type="submit" class="submit-button"  />
         </form>
         <div class="poem">
           به نام خداوند جان و خرد
